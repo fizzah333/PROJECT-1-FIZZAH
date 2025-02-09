@@ -1,0 +1,31 @@
+/* global css */
+* {
+    background-color: rgb(201, 142, 193);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* External CSS */
+h3 {
+    color: paleturquoise
+}
+
+/* element selector */
+h4 {
+    color: rgb(12, 111, 241);
+}
+
+/* class selector */
+.myclass {
+    color: powderblue
+}
+
+/* id selector */
+#myid {
+    color: rgb(141, 70, 103);
+}
+
+/* group selector */
+h5,
+p {
+    color: rgb(192, 43, 43);
+}

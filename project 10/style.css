@@ -1,0 +1,62 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(240, 167, 209);
+    color: rgb(236, 13, 151);
+}
+
+h1 {
+    color: rgb(223, 59, 86);
+}
+
+/* Attribute selector */
+a {
+    color: rgb(146, 15, 80);
+    text-decoration: none;
+}
+
+a:hover {
+    color: antiquewhite;
+}
+
+/* child selector */
+ul>li {
+    font-weight: 200;
+}
+
+/* Sibling selector */
+h1+p {
+    background-color: rgb(179, 87, 141);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Hover Psuedo-class */
+ul li:hover {
+    color: bisque;
+}
+
+/* :nth-child(n) Psuedo-class */
+ul li:nth-child(3) {
+    background-color: rgb(228, 228, 228);
+}
+
+/* :not(selector) Psuedo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* ::before Psuedo-slement */
+ul li::before {
+    content: "🌷";
+}
+
+/* ::after Psuedo-element */
+a::after {
+    content: "💗";
+}
+
+/* ::first-letter Psuedo-element */
+p::first-letter {
+    font-size: 30px;
+    color: rgb(204, 15, 125);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Methods :</h2>
+    <p>using string methods</p>
+    <script>
+        var str = "LaNaDeLrEy";
+        document.write(str.toUpperCase());
+        document.write("<br>")
+        document.write(str.toLowerCase());
+        document.write("<br>");
+        document.write(str.startsWith("I"));
+        document.write("<br>");
+
+        //Test method > returns with true or false//
+        var str1 = "I learnt about coding methods"
+        var patt = new RegExp("I learnt about coding methods");
+        var res = patt.test(str1);
+        document.write(res);
+    </script>
+    <h2>Loops</h2>
+    <p id="demo"></p>
+    <script>
+        var singers = ["Lana del rey", "Yung kai", "Taylor swift", "Chase Atlantic", "The weekend", "Floyy menor"]
+        var text = "";
+        var i;
+        for (i = 0; i < singers.length; i++) {
+            text += singers[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>

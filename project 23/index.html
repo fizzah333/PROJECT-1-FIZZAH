@@ -1,0 +1,18 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Error Handling in JS</title>
+    </head>
+    <body>
+        <h3>Error Handling in JS :</h3>
+        <p>My goal is to identify an error using <b>Error Handing in JavaScript .</b></p>
+        <p id="error_message"></p>
+        <script>
+            try {
+                addalert("I love to do coding")
+            }
+            catch (err) {
+                document.getElementById("error_message").innerHTML = err.message
+            }
+        </script>
+    </body>
+</html>

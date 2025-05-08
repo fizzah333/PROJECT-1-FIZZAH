@@ -1,0 +1,37 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Array Handling and Mapping</title>
+    </head>
+    <body>
+        <h2>My lucky numbers :</h2>
+        <p>These numbers are rare and uniquely speacial</p>
+        <p id="result1"></p>
+        <p>Add every number with 5</p>
+        <p id="productvalue"></p>
+        <script>
+            var singers = [69 , 9 , 78 , 45 , 67 , 23 , 10]
+            function MyFunction(num) {
+                return num + 5
+            }
+            var newarray = numbers.map(MyFunction);
+            document.getElementById("productvalue").innerHTML = newarray
+        </script>
+        <p> <b>Click button for ascending order : </b></p>
+        <p id="result1"></p>
+        <button onclick="ascending()">Click me !</button>
+        <p> <b>Click button for descending order : </b></p>
+        <p id="result2"></p>
+        <button onclick="descending()">Click me !</button>
+        <script>
+            function ascending () {
+                singers.sort(function(a , b){return a-b})
+                document.getElementById("result1").innerHTML=singers
+            }
+            function descending() {
+                singers.sort(function (a, b) {return b-a})
+                document.getElementById("result2").innerHTML = singers
+            }
+
+        </script>
+    </body>
+</html>

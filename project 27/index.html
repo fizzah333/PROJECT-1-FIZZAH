@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum and Trigonometric Values</title>
+</head>
+
+<body>
+    <h2>Sum & Trigonometric Calculator</h2>
+    <p id="result"></p>
+
+    <script>
+        function sumArguments(...args) {
+            return args.reduce((total, num) => total + num, 0);
+        }
+        function toRadians(degrees) {
+            return degrees * (Math.PI / 180);
+        }
+        const sum = sumArguments(30, 45, 60); 
+        const radians = toRadians(sum);
+        const sine = Math.sin(radians).toFixed(4);
+        const cosine = Math.cos(radians).toFixed(4);
+        const tangent = Math.tan(radians).toFixed(4);
+
+        // Display results
+        document.getElementById("result").innerHTML = `
+      <strong>Sum of Arguments:</strong> ${sum}°<br>
+      <strong>sin(${sum}°):</strong> ${sine}<br>
+      <strong>cos(${sum}°):</strong> ${cosine}<br>
+      <strong>tan(${sum}°):</strong> ${tangent}
+    `;
+    </script>
+</body>
+
+</html>

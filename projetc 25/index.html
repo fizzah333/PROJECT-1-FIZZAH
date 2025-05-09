@@ -1,0 +1,42 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>After Class project</title>
+    </head>
+    <body>
+        <h2><center>My Favourite Hobbies</center></h2>
+        <p>These are those which make me relax and sooth me up.</p>
+        <p id="demo"></p>
+        <script>
+            var hobbies = {
+                place: "court",
+                players: 10,
+                suit:"jersey.",
+            }
+            document.getElementById("demo").innerHTML = "I" + " play" + " basketball " + "in " + "basketball " + hobbies.place + "with " + "a number of " + hobbies.players + " players" + "while wearing" +   " a " + hobbies.suit;
+            var hobbies = [
+                "basketball",
+                "soccer",
+                "badminton",
+            ]
+            document.getElementById("demo").innerHTML = hobbies[2]
+        </script>
+        <p id="demo"></p>
+        <h2><center>My Favourite Games</center></h2>
+        <h3><i>Online</i></h3>
+        <p><i>The PS4 offers solid performance and a rich game library with popular exclusives. The PS5 builds on this with faster
+        load times, better graphics, and new-gen titles. Xbox Series X|S stands out for its power, Game Pass service, and broad
+        backward compatibility.</i></p>
+        <p id="myjoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
+        <script>
+            var games = ["PS4", "PS5", "Xbox", "grandtheftauto", "spiderman", "cargames"];
+            document.getElementById("demo").innerHTML = games[0];
+            document.getElementById("myjoin").innerHTML = games.join(" , ");
+            document.getElementById("myfirstpop").innerHTML = games;
+            games.pop()
+            document.getElementById("mysecondpop").innerHTML = games;
+        </script>
+
+    </body>
+</html>

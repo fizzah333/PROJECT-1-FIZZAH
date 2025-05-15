@@ -1,0 +1,76 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Learning about Classes in JS</title>
+    </head>
+    <body>
+        <h2>Classes :</h2>
+        <p>I am using classes to form a static method in JS !</p>
+        <p id="hello"></p>
+        <p id="hi"></p>
+        <p id-="hey"></p>
+        <script>
+            class Student {
+                constructor(name) {
+                    this.studentname = name;
+                }
+
+                static hello() {  // static method
+                    return "Hello!!";
+                }
+
+                static welcome(x) {
+                    return "hey " + x.studentname;
+                }
+
+                hi() {
+                    return "Hi " + this.studentname;
+                }
+            }
+
+            let myname = new Student("Carol");
+
+            // Call 'hello()' on the class Student and NOT on the 'myname' object because 'hello()' is a static method
+            // cannot access object
+            document.getElementById("hello").innerHTML = Student.hello();
+
+            // Call 'hi()' on the 'myname' object
+            document.getElementById("hi").innerHTML = myname.hi();
+
+            // Call 'welcome()' can access the object since parameter is passed
+            document.getElementById("welcome").innerHTML = Student.welcome(myname);
+         </script>
+         <h2>JavaScript Class Inheritance</h2>
+        <p>Use the "extends" keyword to inherit all methods from another class.</p>
+        <p>Use the "super" method to call the parent's constructor function.</p>
+        
+        <p id="details"></p>
+        
+        <script>
+            class song {
+                constructor(brand) {
+                    this.songname = brand;
+                }
+
+                present() {
+                    return 'I love ' + this.songname;
+                }
+            }
+
+            class Model extends song {
+                constructor(brand, mod) {
+                    super(brand);
+                    this.model = mod;
+                }
+
+                show() {
+                    return this.present() + ', it is by ' + this.model;
+                }
+            }
+
+            let mysong = new Model("Blue", "Yung kai");
+            document.getElementById("details").innerHTML = mysong.show();
+        </script>
+         
+  
+    </body>
+</html>

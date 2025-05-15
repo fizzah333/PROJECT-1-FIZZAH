@@ -1,0 +1,33 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Login form</title>
+    </head>
+    <h1>Instagram Login </h1>
+        <form name="myform" onsubmit="validateForm()">
+            Username :
+            <input type="text" name="fname">
+            <input type="submit" value="submit">
+            <p id="message"></p>
+            Password :
+            <input type="password" name="xname"> 
+            <input type="submit" value="submit">
+            <p id="message2"></p>
+            <script>
+                function validateForm() {
+                    var x = document.forms["myform"]["fname"].value;
+                    if (x == "") {
+                        alert("name must be filled out")
+                        return false;
+                    }
+                }
+                function validateForm() {
+                        var x = document.forms["myform"]["xname"].value;
+                        if (x == "") {
+                            alert("name must be filled out")
+                            return false;
+                        }
+                    }
+            </script>
+        </form>
+    </body>
+</html>

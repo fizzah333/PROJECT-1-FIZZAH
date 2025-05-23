@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Async/Await Example</title>
+</head>
+
+<body>
+
+    <h2>Async/Await Function Example</h2>
+    <p id="output">Loading...</p>
+
+    <script>
+        // Simulating an asynchronous function (e.g., fetching data)
+        async function fetchUserName() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Fizzah");
+                }, 2000); // 2 seconds delay
+            });
+        }
+
+        // Function that depends on fetchUserName's result
+        async function greetUser() {
+            const userName = await fetchUserName(); // Wait for fetchUserName to finish
+            document.getElementById("output").innerText = `Welcome, ${userName}! 🌸`;
+        }
+
+        // Run the greetUser function
+        greetUser();
+    </script>
+
+</body>
+
+</html>

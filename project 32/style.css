@@ -1,0 +1,67 @@
+/* Global Properties */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    background: #a74f14;
+
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Main Heading Font */
+
+.m-heading {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Navigation */
+
+.navigation-link {
+
+    border: 2px solid transparent;
+
+}
+
+.navigation-link:hover {
+
+    text-decoration: #845925;
+
+    border-bottom: 2px solid #78533e;
+
+    transition: 0.5s ease;
+}
+
+.banner-image {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("baking.jpg");
+    background-size: cover;
+}
+
+.about-image {
+    height: 400px;
+    width: 400px;
+}
+
+.about-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.media_link {
+    padding: 1rem;
+    max-width: 12rem;
+    margin-left: 1rem;
+    border: 2px solid #dbaf11;
+    border-radius: 0.5rem;
+}

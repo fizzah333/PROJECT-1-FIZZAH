@@ -1,0 +1,10 @@
+
+.banner-image {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("modern-bank-building-city-street_107791-15380.avif");
+    background-size: cover;
+}
